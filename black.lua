@@ -162,7 +162,7 @@ end
 if Redis:get(black.."chsource") then
 chsource = Redis:get(black.."chsource")
 else
-chsource = "J_F_A_I"
+chsource = "JFFFFF"
 end
 function Reply_Status(UserId,TextMsg)
 local UserInfo = LuaTele.getUser(UserId)
@@ -989,8 +989,8 @@ end
 end
 
 ----
-if text == 'المطور جاك' or text == 'مبرمج السورس' or text == 'جاك' then  
-local UserId_Info = LuaTele.searchPublicChat("v_p_e")
+if text == 'مبرمج السورس' or text == 'مطور السورس' or text == 'المبرمج' then  
+local UserId_Info = LuaTele.searchPublicChat("X_GGX")
 if UserId_Info.id then
 local UserInfo = LuaTele.getUser(UserId_Info.id)
 local InfoUser = LuaTele.getUserFullInfo(UserId_Info.id)
@@ -1001,24 +1001,27 @@ Bio = ''
 end
 local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
 if photo.total_count > 0 then
-local TestText = "𝑱𝑨𝑪𝑲\n— — — — — — — — —\n ❍*َdev name➢* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n❍*َbio* : [❲ "..Bio.." ❳]"
+local TestText = "  ‹ 𝗕𝗟𝗮𝗖𝗞 ᥀ بلاڪ . \n⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n ‹ : *Dev Name* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n‹ : *Dev Bio* : [❲ "..Bio.." ❳]"
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '𝑱𝑨𝑪𝑲', url = "https://t.me/v_p_e"}
+{text = '❲ 𝖼𝗈𝖽𝖾𝗋 ❳', url = "https://t.me/X_GGX"}
+},
+{
+{text = '‹ 𝗕𝗟𝗮𝗖𝗞 ᥀ بلاڪ . ', url='https://t.me/JFFFFF'},
 },
 }
 local msg_id = msg.id/2097152/0.5 
 return https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(TestText)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
 else
-local TestText = "- معلومات مبرمج السورس : \\nn: name Dev . ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n\n ["..Bio.."]"
+local TestText = "- معلومات مبࢪمج السورس : \\nn: name Dev . ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n\n ["..Bio.."]"
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '𝑱𝑨𝑪𝑲', url = "https://t.me/v_p_e"}
+{text = '❲ 𝖼𝗈𝖽𝖾𝗋 ❳', url = "https://t.me/X_GGX"}
 },
 {
-{text = '𝑆𝑂𝑈𝑅𝐶𝐸 𝐵𝐿𝐴𝐶𝐾', url = "https://t.me/J_F_A_I"},
+{text = '‹ 𝗕𝗟𝗮𝗖𝗞 ᥀ بلاڪ . ', url='https://t.me/JFFFFF'},
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -1027,27 +1030,19 @@ end
 end
 end
 
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
-photo = "https://t.me/photojack14366/58"
-local T =[[
-ــــــــــــــــــــــ❍ـــــــــــــــــــــ
- ❍ 𝑆𝑂𝑈𝑅𝐶𝐸 𝐵𝐿𝐴𝐶𝐾 ❍
-ــــــــــــــــــــــ❍ـــــــــــــــــــــ
-❍ 𝐷𝐸𝑉 >> [˹ 𝐽𝐴𝐶𝐾 .](t.me/PHP57)
-ــــــــــــــــــــــ❍ـــــــــــــــــــــ 
-❍ 𝐷𝐸𝑉 >> [˹ 𝐴𝐵𝑂 𝐴𝐿𝑀𝐴𝐺𝐷 .](t.me/MO_ABO_el)
-ــــــــــــــــــــــ❍ـــــــــــــــــــــ 
-❍ـــ❍ >> [˹ 𝑆𝑂𝑈𝑅𝐶𝐸 𝐵𝐿𝐴𝐶𝐾 .](t.me/J_F_A_I)
-ــــــــــــــــــــــ❍ـــــــــــــــــــــ
-]]
+if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
+local Text = " [- 𝗐ᴇʟᴄᴏ𝗆𝖾 ᴛᴏ 𝗌𝗈𝗎𝗋𝖼𝖾 ‹ 𝗕𝗟𝗮𝗖𝗞 ᥀ . ](t.me/JFFFFF)"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'ِّّ𝑆𝑂𝑈𝑅𝐶𝐸 𝐵𝐿𝐴𝐶𝐾', url = 't.me/J_F_A_I'}, 
-},
-}
-local msgg = msg.id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg.chat_id .. "&photo="..photo.."&caption=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+{text = ' Source Channel ', url = "https://t.me/JFFFFF"},{text = 'Exp Source ', url = "https://t.me/nnnnqy"}
+},{
+{text = 'Developer', url = "https://t.me/X_GGX"}
+},{
+{text = ' للأستفسار ولتواصل عن البوت ', url = "https://t.me/xlbbbot"}
+},}
+local msg_id = msg.id/2097152/0.5
+https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/F_6AA/169&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 end --non Sudo_Id
